@@ -60,7 +60,7 @@ telegraf-execd-opcda is a [telegraf](https://github.com/influxdata/telegraf) ext
   * register this module - enter `%systemroot%\SysWoW64\regsvr32.exe gbda_aut.dll`
   * Set go architecture - `$ENV:GOARCH=386` (powershell), or `SET GOARCH=386` (batch)
 
-* Build the executable `go build -o opcda.exe .\cmd\opcda\main.go`
+* Build the executable `go build -trimpath -o opcda.exe .\cmd\opcda\main.go`
 
 * Edit opcda.conf as needed.
 
